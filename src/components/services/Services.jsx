@@ -3,7 +3,7 @@ import './service.scss'
 
 function Services() {
   return    (
-    <div>Services</div>
+    <section id='services'>Services</section>
   )
 }
 

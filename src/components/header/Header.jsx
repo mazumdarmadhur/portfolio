@@ -3,17 +3,17 @@ import './header.scss';
 import ME from '../../assets/ME.png';
 import HeaderSocials from './HeaderSocials';
 import Typewriter1 from './Typewriter';
-
+import CTA from './CTA';
 
 function Header() {
   return (
-    <header>
+    <header className='home'>
       <div className='container header__container'>
-        <p>Hello</p>
-        <h3><Typewriter1 /></h3>
-        <p>I'm a Front-End Developer, UI/UX Designer and Graphic Artist from Nigeria who is passionate about making sure that systems, interfaces, languages and graphics are human-friendly, emotive and clear. </p>
+        <p>Hello👋</p>
+        <h2><Typewriter1 /></h2>
+        <CTA/>
         <HeaderSocials />
-        <a href="#" className='scroll__down'>Scroll Down</a>
+        <a href="#about" className='scroll__down'>Scroll Down</a>
 
         <div className="me">
           <img src={ME} alt="me" />

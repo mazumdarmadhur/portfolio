@@ -8,14 +8,71 @@ header {
     height: 100%;
     position: relative;
   }
+}
+.home{
+  position: relative;
+  background: url("../../assets/bgIMG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
 
-  p:nth-child(3) {
-    width: 50%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.cta {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center; 
+
+  a {
+    text-decoration: none;
+  }
+
+  .app__work-filter-item-1 {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    color: #000;
+    font-weight: 800;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+    border: 1px solid var(--secondary-color);
+
+    &:hover {
+      background-color: var(--secondary-color);
+      color: #fff;
+    }
+
+    @media screen and (min-width: 2000px) {
+      padding: 1rem 2rem;
+      border-radius: 0.85rem;
+    }
+  }
+
+  .app__work-filter-item-2 {
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 0.2rem;
+    color: #fff;
+    font-weight: 800;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid var(--secondary-color);
+    }
+
+    @media screen and (min-width: 2000px) {
+      padding: 1rem 2rem;
+      border-radius: 0.85rem;
+    }
   }
 }
+
 .header__socials {
   display: flex;
   flex-direction: column;
@@ -79,6 +136,7 @@ header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 2rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding-top: 2rem;
@@ -89,13 +147,29 @@ img {
 }
 
 .scroll__down {
-  color: #000;
+  color: var(--secondary-color);
   position: absolute;
   bottom: 5rem;
   right: -2.3rem;
   transform: rotate(90deg);
   font-weight: 500;
   font-size: 1rem;
+
+  &:hover{
+    color: var(--secondary-color);
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.btn-warning {
+  background: var(--secondary-color);
+  color: var(--white-color);
+
+  &:hover {
+    background: rgba(238, 238, 238, 0.1);
+  }
 }
 
 @media screen and(max-width: 1024px) {

@@ -26,10 +26,19 @@ nav {
       color: var(--white-color);
       background: linear-gradient(
         180deg,
-        rgb(252,175,22),
-        rgba(151,105,13, 0.966)
+        rgb(252, 175, 22),
+        rgba(151, 105, 13, 0.966)
       );
       box-shadow: 0 0 16px rgba(241, 206, 110, 0.699);
     }
+  }
+  .active {
+    color: var(--white-color);
+    background: linear-gradient(
+      180deg,
+      rgb(252, 175, 22),
+      rgba(151, 105, 13, 0.966)
+    );
+    box-shadow: 0 0 16px rgba(241, 206, 110, 0.699);
   }
 }

@@ -5,15 +5,17 @@ import {TiUser} from 'react-icons/ti';
 import {RiServiceLine} from 'react-icons/ri';
 import {GiSkills} from 'react-icons/gi';
 import {RiContactsBook2Line} from 'react-icons/ri';
+import {useState} from 'react';
 
 function Nav() {
+  const [activeNav, setActiveNav] = useState('#');
   return (
     <nav>
-      <a href="#"><BiHomeCircle/></a>
-      <a href="#about"><TiUser/></a>
-      <a href="#"><GiSkills/></a>
-      <a href="#"><RiServiceLine/></a>
-      <a href="#"><RiContactsBook2Line/></a>
+      <a href="#" onClick={()=> setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><BiHomeCircle/></a>
+      <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><TiUser/></a>
+      <a href="#skills" onClick={()=> setActiveNav('#skills')} className={activeNav === '#skills' ? 'active' : ''}><GiSkills/></a>
+      <a href="#services" onClick={()=> setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine/></a>
+      <a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><RiContactsBook2Line/></a>
     </nav>
   )
 }
