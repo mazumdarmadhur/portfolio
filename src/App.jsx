@@ -1,16 +1,10 @@
-import React from 'react'
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
-import About from './components/about/About'
-import Services from './components/services/Services'
-import Skills from './components/skills/Skills'
-import Testimonials from './components/testimonials/Testimonials'
-import Footer from './components/footer/Footer'
-import Contact from './components/contact/Contact'
+import React from 'react';
+import { About, Contact, Footer, Header, Nav, Services, Skills, Testimonials } from './components';
+import './App.scss';
 
 const App = () => {
   return (
-    <>
+    <div className="app">
       <Header />
       <Nav />
       <About />
@@ -19,7 +13,7 @@ const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
-    </>
+    </div>
   )
 }
 
