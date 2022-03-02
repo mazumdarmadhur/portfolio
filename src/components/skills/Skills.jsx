@@ -11,6 +11,82 @@ import Java from '../../assets/java.png'
 import Marketo from '../../assets/marketo.png'
 import Salesforce from '../../assets/salesforce.png'
 import Figma from '../../assets/figma.png'
+import SASS from '../../assets/sass.png'
+
+const data = [
+  {
+    id: 1,
+    image: HTML,
+    title: 'HTML5',
+    bgColor: 'rgb(255, 244, 242)'
+  },
+  {
+    id: 2,
+    image: CSS,
+    title: 'CSS3',
+    bgColor: 'rgb(221, 232, 238)'
+  },
+  {
+    id: 3,
+    image: JS,
+    title: 'Javascript',
+    bgColor: 'rgb(253, 247, 209)'
+  },
+  {
+    id: 4,
+    image: ReactPNG,
+    title: 'React',
+    bgColor: 'rgb(236, 252, 255)'
+  },
+  {
+    id: 5,
+    image: Bootstrap,
+    title: 'Bootstrap',
+    bgColor: 'rgb(224,215,240)'
+  },
+  {
+    id: 6,
+    image: SASS,
+    title: 'Sass',
+    bgColor: 'rgb(243, 221, 228)'
+  },
+  {
+    id: 7,
+    image: Flutter,
+    title: 'Flutter',
+    bgColor: 'rgb(209,239,252)'
+  },
+  {
+    id: 8,
+    image: Marketo,
+    title: 'Marketo',
+    bgColor: 'rgb(224,215,240)'
+  },
+  {
+    id: 9,
+    image: Salesforce,
+    title: 'Salesforce',
+    bgColor: 'rgb(222,243,252)'
+  },
+  {
+    id: 10,
+    image: Java,
+    title: 'Java',
+    bgColor: 'rgb(204,220,240)'
+  },
+  {
+    id: 11,
+    image: Git,
+    title: 'Git',
+    bgColor: 'rgb(252, 232, 227)'
+  },
+  {
+    id: 12,
+    image: Figma,
+    title: 'Figma',
+    bgColor: 'rgb(252, 236, 231)'
+  }
+]
 
 function Skills() {
   return (
@@ -22,127 +98,21 @@ function Skills() {
 
         <div className="app_skills_container">
           <div className="test">
-            
-            {/* React  */}
-            <div className='app__skills-item app__flex'>
-              <div
-                className="app__flex"
-                style={{ backgroundColor: '#fff'}}
-              >
-                <img src={ReactPNG} alt='React' />
-              </div>
-              <p className="p-text">React</p>
-            </div>
-
-            {/* Javascript */}
-            <div className='app__skills-item app__flex'>
-              <div
-                className="app__flex"
-                style={{ backgroundColor: '#fff' }}
-              >
-                <img src={JS} alt='Javascript' />
-              </div>
-              <p className="p-text">Javascript</p>
-            </div>
-
-            {/* Flutter  */}
-            <div className='app__skills-item app__flex'>
-              <div
-                className="app__flex"
-                style={{ backgroundColor: '#fff' }}
-              >
-                <img src={Flutter} alt='Flutter' />
-              </div>
-              <p className="p-text">Flutter</p>
-            </div>
-
-            {/* HTML */}
-            <div className='app__skills-item app__flex'>
-              <div
-                className="app__flex"
-                style={{ backgroundColor: '#fff' }}
-              >
-                <img src={HTML} alt='HTML5' />
-              </div>
-              <p className="p-text">HTML5</p>
-            </div>
-
-            {/* CSS */}
-            <div className='app__skills-item app__flex'>
-              <div
-                className="app__flex"
-                style={{ backgroundColor: '#fff' }}
-              >
-                <img src={CSS} alt='CSS3' />
-              </div>
-              <p className="p-text">CSS3</p>
-            </div>
-
-            {/* Bootstrap  */}
-            <div className='app__skills-item app__flex'>
-              <div
-                className="app__flex"
-                style={{ backgroundColor: '#fff' }}
-              >
-                <img src={Bootstrap} alt='Bootstrap' />
-              </div>
-              <p className="p-text">Bootstrap</p>
-            </div>
-
-            {/* Git */}
-            <div className='app__skills-item app__flex'>
-              <div
-                className="app__flex"
-                style={{ backgroundColor: '#fff' }}
-              >
-                <img src={Git} alt='Git' />
-              </div>
-              <p className="p-text">Git</p>
-            </div>
-
-            {/* JAVA  */}
-            <div className='app__skills-item app__flex'>
-              <div
-                className="app__flex"
-                style={{ backgroundColor: '#fff' }}
-              >
-                <img src={Java} alt='Java' />
-              </div>
-              <p className="p-text">Java</p>
-            </div>
-
-            {/* Marketo  */}
-            <div className='app__skills-item app__flex'>
-              <div
-                className="app__flex"
-                style={{ backgroundColor: '#fff' }}
-              >
-                <img src={Marketo} alt='Marketo' />
-              </div>
-              <p className="p-text">Marketo</p>
-            </div>
-
-            {/* Salesforce  */}
-            <div className='app__skills-item app__flex'>
-              <div
-                className="app__flex"
-                style={{ backgroundColor: '#fff' }}
-              >
-                <img src={Salesforce} alt='Salesforce' />
-              </div>
-              <p className="p-text">Salesforce</p>
-            </div>
-
-            {/* Figma  */}
-            <div className='app__skills-item app__flex'>
-              <div
-                className="app__flex"
-                style={{ backgroundColor: '#fff' }}
-              >
-                <img src={Figma} alt='Figma' />
-              </div>
-              <p className="p-text">Figma</p>
-            </div>
+            {
+              data.map(({ id, image, title, bgColor }) => {
+                return (
+                  <div key={id} className='app__skills-item app__flex'>
+                    <div
+                      className="app__flex"
+                      style={{ backgroundColor:bgColor }}
+                    >
+                      <img src={image} alt={title} />
+                    </div>
+                    <p className="p-text">{title}</p>
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
       </div>
