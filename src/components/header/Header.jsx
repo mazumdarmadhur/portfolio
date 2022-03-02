@@ -7,7 +7,7 @@ import CTA from './CTA';
 
 function Header() {
   return (
-    <header className='home'>
+    <header className='home' id='home'>
       <div className='container header__container'>
         <p>Hello👋</p>
         <h2><Typewriter1 /></h2>
