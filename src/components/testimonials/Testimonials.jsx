@@ -30,7 +30,7 @@ const data = [
 function Testimonials() {
   return (
     <section id='testimonials'>
-      <div className="portfolio__section">
+      <div className="testimonial__section">
         <h2 className="head-text">Testimonials</h2>
 
         <Swiper className='container testimonials__container'
