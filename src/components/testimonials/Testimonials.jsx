@@ -3,13 +3,14 @@ import './testimonials.scss'
 import HTML from '../../assets/html.png';
 
 // import Swiper core and required modules
-import { Pagination } from 'swiper';
+import { Pagination, Navigation } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/scss';
+import 'swiper/scss/pagination';
+import 'swiper/scss/navigation';
 
 const data = [
   {
@@ -32,9 +33,15 @@ function Testimonials() {
       <div className="portfolio__section">
         <h2 className="head-text">Testimonials</h2>
 
-        <Swiper className='container testimonials__container'>
+        <Swiper className='container testimonials__container'
+          // install Swiper modules
+          modules={[Pagination, Navigation]}
+          spaceBetween={20}
+          slidesPerView={1}
+          // navigation
+          pagination={{ clickable: true }}>
           {
-            data.map(({ avatar, name, review, company },index) => {
+            data.map(({ avatar, name, review, company }, index) => {
               return (
                 <SwiperSlide>
                   <div key={index} className="app__testimonial-item app__flex">
