@@ -9,7 +9,7 @@ header {
     position: relative;
   }
 }
-.home{
+.home {
   position: relative;
   background: url("../../assets/bgIMG.png");
   background-size: cover;
@@ -20,7 +20,7 @@ header {
 .cta {
   margin-top: 2rem;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 
   a {
     text-decoration: none;
@@ -140,11 +140,13 @@ header {
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding-top: 2rem;
+
+  img {
+    width: 22rem;
+    height: 30rem;
+  }
 }
-img {
-  width: 22rem;
-  height: 30rem;
-}
+
 
 .scroll__down {
   color: var(--secondary-color);
@@ -155,7 +157,7 @@ img {
   font-weight: 500;
   font-size: 1rem;
 
-  &:hover{
+  &:hover {
     color: var(--secondary-color);
     font-weight: 800;
     text-decoration: none;
@@ -172,15 +174,15 @@ img {
   }
 }
 
-.typwriter__Section{
-  p{
+.typwriter__Section {
+  p {
     font-size: 2.5rem;
   }
 }
 
 @media screen and(max-width: 1024px) {
   header {
-    height: 68vh;
+    height: 100vh;
   }
 }
 
@@ -192,8 +194,8 @@ img {
   .scroll__down {
     display: none;
   }
-  .typwriter__Section{
-    p{
+  .typwriter__Section {
+    p {
       font-size: 2rem;
     }
   }

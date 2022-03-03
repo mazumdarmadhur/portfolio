@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.scss';
-import ME from '../../assets/ME.png';
+import ME from '../../assets/ME2.png';
 import HeaderSocials from './HeaderSocials';
 import Typewriter1 from './Typewriter';
 import CTA from './CTA';
