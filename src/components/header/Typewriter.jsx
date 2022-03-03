@@ -3,7 +3,7 @@ import {Typewriter} from 'react-simple-typewriter';
 
 function Typewriter1() {
     return (
-        <div><p style={{fontSize:'2.5rem'}}>I'm <span style={{ color: '#fcaf16', fontWeight: 'bold' }}>
+        <div className='typwriter__Section'><p>I'm <span style={{ color: '#fcaf16', fontWeight: 'bold' }}>
             <Typewriter
                 words={['Sanjit Majumdar.', 'a Front-End Dev.', 'a Freelancer.','a Proud Indian.']}
                 loop={Infinity}

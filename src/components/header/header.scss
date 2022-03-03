@@ -172,6 +172,12 @@ img {
   }
 }
 
+.typwriter__Section{
+  p{
+    font-size: 2.5rem;
+  }
+}
+
 @media screen and(max-width: 1024px) {
   header {
     height: 68vh;
@@ -185,5 +191,10 @@ img {
   .header__socials,
   .scroll__down {
     display: none;
+  }
+  .typwriter__Section{
+    p{
+      font-size: 2rem;
+    }
   }
 }
