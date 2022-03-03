@@ -22,7 +22,7 @@ const data = [
   {
     avatar: HTML,
     name: 'Anujendra',
-    review: 'Originally I was looking for a job as a frontend developer but I found Orion. Orion is a great place to work. The people are friendly, helpful and very knowledgeable. I recommend Orion to anyone looking for a job.',
+    review: 'Originally I was looking for a job as a frontend developer but I found Orion. Orion is a great place to work. The people are friendly, helpful and very knowledgeable.',
     company: 'techniche'
   }
 ]

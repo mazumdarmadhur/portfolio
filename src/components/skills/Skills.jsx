@@ -93,7 +93,7 @@ function Skills() {
     <section id='skills' className='app__skills'>
       <div className='skills__section'>
         <div className='head__title'>
-          <h2 className="head-text">Skills & Experiences</h2>
+          <h2 className="head-text">Skills</h2>
         </div>
 
         <div className="app_skills_container">
