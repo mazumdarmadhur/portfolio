@@ -66,6 +66,7 @@
   width: 100%;
   position: relative;
   flex-direction: column;
+  text-align: center;
 
   h4 {
     margin-top: 1rem;
@@ -77,6 +78,7 @@
   }
 
   p {
+    text-align: center;
     margin-bottom: 0.1rem;
   }
 }
