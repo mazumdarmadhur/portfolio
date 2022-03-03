@@ -45,7 +45,7 @@ setTimeout(() =>{
           <div className="app__footer-cards">
             <div className="app__footer-card ">
               <img src={Email} alt="email" />
-              <a href="mailto:mazumdarmadhur@gmail.com" className="p-text">hello@micael.com</a>
+              <a href="mailto:mazumdarmadhur@gmail.com" className="p-text">sanjit@gmail.com</a>
             </div>
             <div className="app__footer-card">
               <img src={Linkedin} alt="linkedin" />
