@@ -39,7 +39,7 @@ setTimeout(() =>{
   return (
     <section id='contact' className='app__footer'>
       <div className="contact__section">
-        <h2 className="head-text">Take A Coffee & Chat With Me</h2>
+        <h2 className="head-text">Take A Coffee & <span>Chat With Me</span></h2>
 
         <div className="container footer__container">
           <div className="app__footer-cards">

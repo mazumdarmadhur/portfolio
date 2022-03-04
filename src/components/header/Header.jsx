@@ -9,6 +9,9 @@ import { BsMouse } from 'react-icons/bs';
 function Header() {
   return (
     <header className='home' id='home'>
+      <div className="logo">
+        <p className='header__logo'>Sanjit Majumdar</p>
+      </div>
       <div className='container header__container'>
         <p>Hello👋</p>
         <h2><Typewriter1 /></h2>

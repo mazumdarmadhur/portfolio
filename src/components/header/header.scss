@@ -17,6 +17,23 @@ header {
   background-repeat: repeat;
 }
 
+.logo {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  .header__logo {
+    font-family: var(--logo-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+
+    @media screen and(max-width: 600px) {
+     display: none;
+    }
+  }
+}
+
 .cta {
   margin-top: 2rem;
   display: flex;
