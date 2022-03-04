@@ -190,3 +190,21 @@
       padding: 2rem;
     }
   }
+
+  .active-link{
+    background: red;
+  }
+
+/*========== SCROLL BAR ==========*/ 
+::-webkit-scrollbar{
+  width: .5rem;
+  border-radius: .1rem;
+  background-color: hsl(0,0%,80%);
+}
+::-webkit-scrollbar-thumb{
+  background-color: hsl(235,56%,43%);
+  border-radius: .2rem;
+  &:hover{
+    background-color: hsl(219%,8%,20%);
+  }
+}
