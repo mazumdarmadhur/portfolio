@@ -13,7 +13,7 @@ const HeaderSocials = () => {
                 <a href="https://github.com/mazumdarmadhur" target="_blank"><FaGithubAlt /> </a>
             </div>
             <div>
-                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><BsTwitter /> </a>
+                <a href="https://twitter.com/majumdar_san" target="_blank"><BsTwitter /> </a>
             </div>
         </div>
     );
