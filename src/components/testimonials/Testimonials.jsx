@@ -4,14 +4,13 @@ import ANUJ from '../../assets/Anuj.png';
 import Rahul from '../../assets/Rahul.png';
 
 // import Swiper core and required modules
-import { Pagination, Navigation } from 'swiper';
+import {Autoplay, Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/scss';
 import 'swiper/scss/pagination';
-import 'swiper/scss/navigation';
 
 const data = [{
   avatar: ANUJ,
@@ -35,10 +34,13 @@ function Testimonials() {
 
         <Swiper className='container testimonials__container'
           // install Swiper modules
-          modules={[Pagination, Navigation]}
+          modules={[Autoplay, Pagination]}
           spaceBetween={20}
           slidesPerView={1}
-          // navigation
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           pagination={{ clickable: true }}>
           {
             data.map(({ avatar, name, review, company }, index) => {
