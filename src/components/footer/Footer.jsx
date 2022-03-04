@@ -1,5 +1,6 @@
-import React from 'react'
-import './footer.scss'
+import React from 'react';
+import ScrollToTop from './ScrollToTop';
+import './footer.scss';
 
 function Footer() {
   return (
@@ -21,6 +22,7 @@ function Footer() {
         <small><b>No &copy; copyright issues.</b></small>
         <p>Feel free to copy. If you need any help, ping me !</p>
       </div>
+      <ScrollToTop/>
     </footer>
   )
 }

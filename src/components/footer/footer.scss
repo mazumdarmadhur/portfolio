@@ -1,43 +1,72 @@
-footer{
-    background: var(--secondary-color);
-    padding: 3rem 0;
-    text-align: center;
-    font-size: 0.9rem;
-    
-    a{
-        color: var(--white-color);
+footer {
+  background: var(--secondary-color);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
 
-        &:hover{
-            text-decoration: none;
-            color: #fcaf16;
-            font-weight: 800;
-        }
-    }
-
-    .footer__logo{
-        font-family: var(--logo-font);
-        font-size: 3rem;
-        font-weight: 800;
-        margin-bottom: 2rem;
-        display: inline-block;
-        color: var(--third-color);
-    }
-}
-
-.permalinks{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0 auto 3rem;
-
-    @media screen and (max-width:600px){
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-}
-
-.footer__copyright{
-    margin-bottom: 4rem;
+  a {
     color: var(--white-color);
+
+    &:hover {
+      text-decoration: none;
+      color: #fcaf16;
+      font-weight: 800;
+    }
+  }
+
+  .footer__logo {
+    font-family: var(--logo-font);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    display: inline-block;
+    color: var(--third-color);
+  }
+}
+
+.permalinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.footer__copyright {
+  margin-bottom: 4rem;
+  color: var(--white-color);
+}
+
+.scrollToTop {
+  background-color: rgb(18, 18, 88);
+  border-radius: 50%;
+  position: fixed;
+  height: 2rem;
+  width: 2rem;
+  bottom: 40px;
+  right: 40px;
+  z-index: 2000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    color: white;
+    font-size: 1rem;
+  }
+  &:hover {
+    background-color: white;
+    svg {
+      color: rgb(18, 18, 88);
+    }
+  }
+
+  @media screen and (max-width: 600px){
+      display: none;
+  }
 }
