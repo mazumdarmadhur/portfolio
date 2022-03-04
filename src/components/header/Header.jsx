@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.scss';
 import { motion } from 'framer-motion';
-import ME from '../../assets/ME2.png';
+import ME2 from '../../assets/My-pic.png';
 import HeaderSocials from './HeaderSocials';
 import Typewriter1 from './Typewriter';
 import CTA from './CTA';
@@ -34,7 +34,7 @@ function Header() {
         <motion.div
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 1.5, delayChildren: 0.5 }} className="me">
-          <img src={ME} alt="me" />
+          <img src={ME2} alt="me" />
         </motion.div>
       </div>
     </header>
