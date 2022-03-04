@@ -39,7 +39,7 @@ header {
     border: 1px solid var(--secondary-color);
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: var(--third-color);
       color: #fff;
     }
 
@@ -148,20 +148,46 @@ header {
 }
 
 
+// .scroll__down {
+//   color: var(--secondary-color);
+//   position: absolute;
+//   bottom: 5rem;
+//   right: -2.3rem;
+//   transform: rotate(90deg);
+//   font-weight: 500;
+//   font-size: 1rem;
+
+//   &:hover {
+//     color: var(--third-color);
+//     font-weight: 800;
+//     text-decoration: none;
+//     transition: all 0.3s ease-in-out;
+//   }
+// }
+
 .scroll__down {
   color: var(--secondary-color);
   position: absolute;
   bottom: 5rem;
   right: -2.3rem;
-  transform: rotate(90deg);
+  display: grid;
+  row-gap: 2.25rem;
+  justify-items: center;
   font-weight: 500;
   font-size: 1rem;
 
   &:hover {
-    color: var(--secondary-color);
+    color: var(--third-color);
     font-weight: 800;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+  }
+  .scroll__icon{
+    font-size: 1.1rem;
+  }
+  .scroll__name{
+    font-size: 0.9rem;
+    transform: rotate(90deg);
   }
 }
 
