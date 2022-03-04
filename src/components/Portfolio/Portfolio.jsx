@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './portfolio.scss';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import Portfolio1 from '../../assets/portfolio1.png';
 import Portfolio2 from '../../assets/portfolio2.png';
 import Portfolio3 from '../../assets/portfolio3.png';
+
+import { motion } from "framer-motion";
 
 const data = [
     {
@@ -36,12 +38,19 @@ const data = [
 ]
 
 function Portfolio() {
+    const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
     return (
         <section id='portfolio' className='app__works'>
             <div className="portfolio__section">
-                <h2 className="head-text">My Creative <span>Portfolio</span></h2>
+                <motion.div whileInView={{ y: [-100, 0], opacity: [0, 1] }}
+                    transition={{ duration: 0.5 }}>
+                    <h2 className="head-text">My Creative <span>Portfolio</span></h2>
+                </motion.div>
 
-                <div className="container  portfolio__container">
+                <motion.div
+                    whileInView={{ y: [-100, 0], opacity: [0, 1] }}
+                    transition={{ duration: 0.5 }}
+                    className="container  portfolio__container">
                     {
                         data.map(({ id, image, live, github, title, para, display }) => {
                             return (
@@ -49,18 +58,21 @@ function Portfolio() {
                                     <div className="portfolio__item-image ">
                                         <img src={image} alt="" />
 
-                                        <div className="app__work-hover app__flex">
+                                        <motion.div
+                                            whileHover={{ opacity: [0, 1] }}
+                                            transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
+                                            className="app__work-hover app__flex">
                                             <div className=' app__flex'>
                                                 <a href={live} target='_blank' rel="noopener noreferrer">
                                                     <AiFillEye />
                                                 </a>
                                             </div>
-                                            <div className=' app__flex' style={{display: display}}>
+                                            <div className=' app__flex' style={{ display: display }}>
                                                 <a href={github} target='_blank' rel="noopener noreferrer">
                                                     <AiFillGithub />
                                                 </a>
                                             </div>
-                                        </div>
+                                        </motion.div>
                                     </div>
                                     <div className="app__work-content app__flex">
                                         <h4 className="bold-text">{title}</h4>
@@ -71,7 +83,7 @@ function Portfolio() {
                         })
                     }
 
-                </div>
+                </motion.div>
             </div>
         </section>
     )

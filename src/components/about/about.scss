@@ -1,5 +1,5 @@
 .about__section {
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   background: var(--white-color);
 }
 
@@ -9,10 +9,12 @@
 
 .about__text {
   margin-top: 3rem;
-  width: 50%;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  padding: 0 13rem;
+  // width: 50%;
+  // position: relative;
+  // left: 50%;
+  // transform: translateX(-50%);
+  line-height: 2rem;
 
   p {
     font-size: 1.1rem;
@@ -40,11 +42,13 @@
 @media screen and (max-width: 1200px) {
   .about__text {
     width: 70%;
+    padding: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
   .about__text {
     width: 80%;
+    padding: 0;
   }
 }
