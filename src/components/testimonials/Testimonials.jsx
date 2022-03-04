@@ -1,6 +1,7 @@
 import React from 'react'
 import './testimonials.scss'
-import HTML from '../../assets/html.png';
+import ANUJ from '../../assets/Anuj.png';
+import Rahul from '../../assets/Rahul.png';
 
 // import Swiper core and required modules
 import { Pagination, Navigation } from 'swiper';
@@ -12,19 +13,18 @@ import 'swiper/scss';
 import 'swiper/scss/pagination';
 import 'swiper/scss/navigation';
 
-const data = [
-  {
-    avatar: HTML,
-    name: 'Rahul',
-    review: 'Micael is an awesome developer! I am a backend developer with a passion for building beautiful and functional web applications.',
-    company: 'Corpodails'
-  },
-  {
-    avatar: HTML,
-    name: 'Anujendra',
-    review: 'Originally I was looking for a job as a frontend developer but I found Orion. Orion is a great place to work. The people are friendly, helpful and very knowledgeable.',
-    company: 'techniche'
-  }
+const data = [{
+  avatar: ANUJ,
+  name: 'Anujendra Kumar',
+  review: 'You have done a great job in building and maintaining our website. The theme is also eye catchy and serves the purpose really well. Happy to work with you!',
+  company: 'Techniche.in'
+},
+{
+  avatar: Rahul,
+  name: 'Rahul Shukla',
+  review: 'Thanks to Upflow, we are able to gain visibility into our customers. Fantastic service and a great guy.',
+  company: 'Corpodial Infosolutions'
+}
 ]
 
 function Testimonials() {
