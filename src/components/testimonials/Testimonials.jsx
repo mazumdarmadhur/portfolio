@@ -2,9 +2,10 @@ import React from 'react'
 import './testimonials.scss'
 import ANUJ from '../../assets/Anuj.png';
 import Rahul from '../../assets/Rahul.png';
+import { motion } from 'framer-motion';
 
 // import Swiper core and required modules
-import {Autoplay, Pagination } from 'swiper';
+import { Autoplay, Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -30,7 +31,11 @@ function Testimonials() {
   return (
     <section id='testimonials'>
       <div className="testimonial__section">
-        <h2 className="head-text">Testimonials</h2>
+        <motion.div
+          whileInView={{ y: [100, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5 }}>
+          <h2 className="head-text">Testimonials</h2>
+        </motion.div>
 
         <Swiper className='container testimonials__container'
           // install Swiper modules
@@ -38,7 +43,7 @@ function Testimonials() {
           spaceBetween={20}
           slidesPerView={1}
           autoplay={{
-            delay: 2000,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           pagination={{ clickable: true }}>
@@ -46,7 +51,11 @@ function Testimonials() {
             data.map(({ avatar, name, review, company }, index) => {
               return (
                 <SwiperSlide>
-                  <div key={index} className="app__testimonial-item app__flex">
+                  <motion.div
+                    whileInView={{opacity: [0, 1] }}
+                    transition={{ duration: 0.4, type: 'tween' }}
+                    key={index}
+                    className="app__testimonial-item app__flex">
                     <img src={avatar} alt='' />
                     <div className="app__testimonial-content">
                       <p className="p-text">{review}</p>
@@ -55,7 +64,7 @@ function Testimonials() {
                         <h5 className="p-text">{company}</h5>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </SwiperSlide>
               )
             })
