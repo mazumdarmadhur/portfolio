@@ -8,13 +8,13 @@ const About = () => {
     <section id='about'>
       <div className='about__section'>
         <motion.div
-          whileInView={{ y: [-10, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.3 }} className='head__title'>
+          whileInView={{ y: [10, 0], opacity: [0, 1] }}
+          transition={{ duration: 1 }} className='head__title'>
           <h2 className="head-text">About <span>ME</span></h2>
         </motion.div>
 
         <motion.div
-          whileInView={{ y: [-100, 0], opacity: [0, 1] }}
+          whileInView={{ y: [100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5 }}
           className='about__text container' >
           <p>

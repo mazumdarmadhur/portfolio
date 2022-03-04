@@ -42,13 +42,13 @@ function Portfolio() {
     return (
         <section id='portfolio' className='app__works'>
             <div className="portfolio__section">
-                <motion.div whileInView={{ y: [-100, 0], opacity: [0, 1] }}
+                <motion.div whileInView={{ y: [100, 0], opacity: [0, 1] }}
                     transition={{ duration: 0.5 }}>
                     <h2 className="head-text">My Creative <span>Portfolio</span></h2>
                 </motion.div>
 
                 <motion.div
-                    whileInView={{ y: [-100, 0], opacity: [0, 1] }}
+                    whileInView={{ y: [100, 0], opacity: [0, 1] }}
                     transition={{ duration: 0.5 }}
                     className="container  portfolio__container">
                     {

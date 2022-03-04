@@ -1,5 +1,6 @@
 import React from 'react'
 import './skills.scss'
+import { motion } from 'framer-motion'
 import Flutter from '../../assets/flutter.png'
 import ReactPNG from '../../assets/react.png'
 import JS from '../../assets/javascript.png'
@@ -88,32 +89,41 @@ const data = [
   }
 ]
 
+
+
 function Skills() {
   return (
     <section id='skills' className='app__skills'>
       <div className='skills__section'>
-        <div className='head__title'>
+        <motion.div
+          whileInView={{ y: [100, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5 }}
+          className='head__title'>
           <h2 className="head-text">Skills</h2>
-        </div>
+        </motion.div>
 
         <div className="app_skills_container">
-          <div className="test">
+          <motion.div className="test">
             {
               data.map(({ id, image, title, bgColor }) => {
                 return (
-                  <div key={id} className='app__skills-item app__flex'>
+                  <motion.div
+                    whileInView={{ opacity: [0, 1] }}
+                    transition={{ duration: .9 }}
+                    key={id}
+                    className='app__skills-item app__flex'>
                     <div
                       className="app__flex"
-                      style={{ backgroundColor:bgColor }}
+                      style={{ backgroundColor: bgColor }}
                     >
                       <img src={image} alt={title} />
                     </div>
                     <p className="p-text">{title}</p>
-                  </div>
+                  </motion.div>
                 )
               })
             }
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
