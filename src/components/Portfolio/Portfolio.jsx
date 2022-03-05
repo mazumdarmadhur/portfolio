@@ -11,7 +11,7 @@ const data = [
     {
         id: 1,
         image: Portfolio1,
-        live: 'https://corpodial-infosolutions.netlify.app/',
+        live: 'http://www.corpodials.in/',
         github: 'https://github.com/mazumdarmadhur/Corpodials-Infosolution',
         title: 'Corpodials Infosolutions',
         para: 'Website for the client to enhance their online presence.',
@@ -44,7 +44,7 @@ function Portfolio() {
             <div className="portfolio__section">
                 <motion.div whileInView={{ y: [100, 0], opacity: [0, 1] }}
                     transition={{ duration: 0.5 }}>
-                    <h2 className="head-text">My Creative <span>Portfolio</span></h2>
+                    <h2 className="head-text">My <span>Projects</span></h2>
                 </motion.div>
 
                 <motion.div
